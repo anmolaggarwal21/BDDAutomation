@@ -1,4 +1,5 @@
 ﻿using BDDAutomation.PageObject;
+using BDDAutomation.Shared;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using SoftAssert;
@@ -16,19 +17,24 @@ namespace BDDAutomation.StepFiles
         ScenarioContext _context;
         IWebDriver driver;
         LoginObject _loginObject;
+        HomePageObject _homePageObject;
+        Utility _utility;
 
-        public loginStepFile(ScenarioContext context , LoginObject loginObject)
+        public loginStepFile(ScenarioContext context , LoginObject loginObject, HomePageObject homePageObject, Utility utility)
         {
 
             _context = context;
             _loginObject = loginObject;
+            _homePageObject = homePageObject;
+            _utility = utility;
             driver = _context["WEB_DRIVER"] as IWebDriver;
+            
         }
 
         [Given(@": Click on Login Icon")]
         public void GivenClickOnLoginIcon()
         {
-            _loginObject.click(_loginObject.LoginElement);
+            _utility.click(_homePageObject.LoginElement);
                 
         }
 
@@ -36,22 +42,22 @@ namespace BDDAutomation.StepFiles
         [When(@": I enter username and password")]
         public void WhenIEnterUsernameAndPassword()
         {
-            _loginObject.enterDetails(_loginObject.Username, "testinguser1234");
-            _loginObject.enterDetails(_loginObject.Password, "12345678");
+            _utility.enterDetails(_loginObject.Username, "testinguser1234");
+            _utility.enterDetails(_loginObject.Password, "12345678");
         }
 
         [When(@": I click on the login button")]
         public void WhenIClickOnTheLoginButton()
         {
-            _loginObject.click(_loginObject.LoginButton);
+            _utility.click(_loginObject.LoginButton);
         }
 
         [Then(@": I am able to login")]
         public void ThenIAmAbleToLogin()
         {
-            if (_loginObject.AlertIsPresent())
+            if (_utility.AlertIsPresent())
             {
-                _loginObject.AcceptAlert();
+                _utility.AcceptAlert();
                 AssertAll.Succeed( 
                     () => Assert.Fail("Username and password is incorrect. Not able to login")
                 );
@@ -59,8 +65,8 @@ namespace BDDAutomation.StepFiles
             }
             else
             {
-                var abc = _loginObject.getTextOfElement(_loginObject.LoggedInUsername);
-                Assert.IsTrue(_loginObject.getTextOfElement(_loginObject.LoggedInUsername).Contains("testinguser1234"));
+               
+                Assert.IsTrue(_utility.getTextOfElement(_loginObject.LoggedInUsername).Contains("testinguser1234"));
             }
 
         }
@@ -71,8 +77,8 @@ namespace BDDAutomation.StepFiles
         [When(@": I enter (.*) and (.*)")]
         public void WhenIEnterAnd(string p0, string p1)
         {
-            _loginObject.enterDetails(_loginObject.Username, p0);
-            _loginObject.enterDetails(_loginObject.Password, p1);
+            _utility.enterDetails(_loginObject.Username, p0);
+            _utility.enterDetails(_loginObject.Password, p1);
         }
 
 

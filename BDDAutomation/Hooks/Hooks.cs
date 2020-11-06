@@ -32,7 +32,7 @@ namespace BDDAutomation.Hooks
 
         public void afterScenario()
         {
-            //webDriver.Close();
+            webDriver.Close();
         }
     }
 }
