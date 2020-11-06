@@ -20,4 +20,17 @@
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.4.31" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Feature Files\AddToCart.feature.cs">
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Feature Files\AddToCart.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddToCart.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+  </ItemGroup>
+
 </Project>

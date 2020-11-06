@@ -29,6 +29,7 @@ C:\Users\User\source\repos\BDDAutomation\BDDAutomation\bin\Debug\netcoreapp3.1\N
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\bin\Debug\netcoreapp3.1\nunit.framework.dll
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\User\source\repos\BDDAutomation\BDDAutomation\bin\Debug\netcoreapp3.1\SoftAssert.dll
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\bin\Debug\netcoreapp3.1\TechTalk.SpecFlow.dll
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
@@ -103,10 +104,9 @@ C:\Users\User\source\repos\BDDAutomation\BDDAutomation\bin\Debug\netcoreapp3.1\z
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Debug\netcoreapp3.1\BDDAutomation.AssemblyInfoInputs.cache
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Debug\netcoreapp3.1\BDDAutomation.AssemblyInfo.cs
+C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Debug\netcoreapp3.1\BDDAutomation.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Debug\netcoreapp3.1\BDDAutomation.csproj.CopyComplete
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Debug\netcoreapp3.1\BDDAutomation.dll
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Debug\netcoreapp3.1\BDDAutomation.pdb
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Debug\netcoreapp3.1\BDDAutomation.genruntimeconfig.cache
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Debug\netcoreapp3.1\BDDAutomation.csprojAssemblyReference.cache
-C:\Users\User\source\repos\BDDAutomation\BDDAutomation\bin\Debug\netcoreapp3.1\SoftAssert.dll
-C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Debug\netcoreapp3.1\BDDAutomation.csproj.CoreCompileInputs.cache

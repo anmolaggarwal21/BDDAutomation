@@ -1,4 +1,8 @@
-﻿using OpenQA.Selenium;
+﻿using BDDAutomation.PageObject;
+using BDDAutomation.Shared;
+using NUnit.Framework;
+using OpenQA.Selenium;
+using SoftAssert;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,9 +14,15 @@ namespace BDDAutomation.StepFiles
     public class CommonSteps
     {
         IWebDriver driver;
-        public CommonSteps(ScenarioContext context)
+        HomePageObject _homePageObject;
+        Utility _utility;
+        public CommonSteps(ScenarioContext context,HomePageObject homePageObject, Utility utility)
         {
+            _homePageObject = homePageObject;
             driver = context["WEB_DRIVER"] as IWebDriver;
+            _utility = utility;
+
+
         }
         [Given(@"the user has navigated to the demo site")]
         public void GivenTheUserHasNavigatedToTheDemoSite()
@@ -21,5 +31,15 @@ namespace BDDAutomation.StepFiles
 
         }
 
+        [Given(@"The user is on Home Page")]
+        public void GivenTheUserIsOnHomePage()
+        {
+           if( ! _utility.WaitUntilElementVisible(_homePageObject.HomeTab))
+            {
+                AssertAll.Succeed(
+                   () => Assert.Fail("User is not on homepage")
+               );
+            }
+        }
     }
 }
