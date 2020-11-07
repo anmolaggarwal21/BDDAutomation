@@ -34,7 +34,18 @@ namespace BDDAutomation.StepFiles
         [Given(@"The user is on Home Page")]
         public void GivenTheUserIsOnHomePage()
         {
-           if( ! _utility.WaitUntilElementVisible(_homePageObject.HomeTab))
+            CheckUserIsOnHomePage();
+        }
+
+        [Then(@"The user is on Home Page")]
+        public void ThenTheUserIsOnHomePage()
+        {
+            CheckUserIsOnHomePage();
+        }
+
+        private void CheckUserIsOnHomePage()
+        {
+            if (!_utility.WaitUntilElementVisible(_homePageObject.HomeTab))
             {
                 AssertAll.Succeed(
                    () => Assert.Fail("User is not on homepage")

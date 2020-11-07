@@ -24,12 +24,19 @@
     <Compile Update="Feature Files\AddToCart.feature.cs">
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Update="Feature Files\PlaceOrder.feature.cs">
+      <DesignTime>True</DesignTime>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <SpecFlowFeatureFiles Update="Feature Files\AddToCart.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>AddToCart.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Feature Files\PlaceOrder.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PlaceOrder.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
   </ItemGroup>
 

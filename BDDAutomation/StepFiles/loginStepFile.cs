@@ -34,17 +34,12 @@ namespace BDDAutomation.StepFiles
         [Given(@": Click on Login Icon")]
         public void GivenClickOnLoginIcon()
         {
+            Thread.Sleep(3000);
             _utility.click(_homePageObject.LoginElement);
                 
         }
 
 
-        [When(@": I enter username and password")]
-        public void WhenIEnterUsernameAndPassword()
-        {
-            _utility.enterDetails(_loginObject.Username, "testinguser1234");
-            _utility.enterDetails(_loginObject.Password, "12345678");
-        }
 
         [When(@": I click on the login button")]
         public void WhenIClickOnTheLoginButton()
@@ -77,6 +72,8 @@ namespace BDDAutomation.StepFiles
         [When(@": I enter (.*) and (.*)")]
         public void WhenIEnterAnd(string p0, string p1)
         {
+            //Thread.Sleep(15000);
+          
             _utility.enterDetails(_loginObject.Username, p0);
             _utility.enterDetails(_loginObject.Password, p1);
         }
