@@ -72,7 +72,7 @@ namespace BDDAutomation.StepFiles
         [When(@": I enter (.*) and (.*)")]
         public void WhenIEnterAnd(string p0, string p1)
         {
-            Thread.Sleep(15000);
+            //Thread.Sleep(15000);
           
             _utility.enterDetails(_loginObject.Username, p0);
             _utility.enterDetails(_loginObject.Password, p1);

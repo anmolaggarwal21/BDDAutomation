@@ -109,3 +109,4 @@ C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Release\netcoreapp3.1
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Release\netcoreapp3.1\BDDAutomation.dll
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Release\netcoreapp3.1\BDDAutomation.pdb
 C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Release\netcoreapp3.1\BDDAutomation.genruntimeconfig.cache
+C:\Users\User\source\repos\BDDAutomation\BDDAutomation\obj\Release\netcoreapp3.1\BDDAutomation.csprojAssemblyReference.cache

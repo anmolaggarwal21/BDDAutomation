@@ -5,6 +5,7 @@ using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using TechTalk.SpecFlow;
 
 namespace BDDAutomation.StepFiles
@@ -89,6 +90,7 @@ namespace BDDAutomation.StepFiles
         [When(@"I click ok")]
         public void WhenIClickOk()
         {
+            Thread.Sleep(2000);
             _utility.click(_placeOrderObject.OKButton);
         }
 
