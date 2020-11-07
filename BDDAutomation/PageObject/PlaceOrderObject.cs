@@ -28,6 +28,8 @@ namespace BDDAutomation.PageObject
         public By PurchaseButton { get { return By.XPath("//*[text()='Purchase']"); } }
 
         public By PurchaseValid { get { return By.XPath("//*[text()='Thank you for your purchase!']"); } }
+        public By OKButton { get { return By.XPath("//button[text()='OK']"); } }
+
         public By PurchaseID { get { return By.XPath("//p[contains(text(),'Id')]"); } }
 
         //*[text()='Place Order']
