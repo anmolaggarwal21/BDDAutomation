@@ -22,5 +22,9 @@ namespace BDDAutomation.PageObject
         public By ItemDescriptionLabel { get { return By.XPath("//*[text()='"+ ProductName + "']"); } }
 
         public By DeleteButton { get { return By.XPath("//*[text()='" + ProductName + "']/following-sibling::td[2]/a"); } }
+
+        public By PlaceOrderButton { get { return By.XPath("//*[text()='Place Order']"); } }
+
+        
     }
 }
