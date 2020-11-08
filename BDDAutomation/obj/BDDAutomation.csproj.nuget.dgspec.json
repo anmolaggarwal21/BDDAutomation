@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj": {}
+    "C:\\Users\\aaggarwal\\Documents\\GitHub\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj": {
+    "C:\\Users\\aaggarwal\\Documents\\GitHub\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj",
+        "projectUniqueName": "C:\\Users\\aaggarwal\\Documents\\GitHub\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj",
         "projectName": "BDDAutomation",
-        "projectPath": "C:\\Users\\User\\source\\repos\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\BDDAutomation\\BDDAutomation\\obj\\",
+        "projectPath": "C:\\Users\\aaggarwal\\Documents\\GitHub\\BDDAutomation\\BDDAutomation\\BDDAutomation.csproj",
+        "packagesPath": "C:\\Users\\aaggarwal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aaggarwal\\Documents\\GitHub\\BDDAutomation\\BDDAutomation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aaggarwal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -38,6 +41,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "BoDi": {
+              "target": "Package",
+              "version": "[1.4.1, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.7.1, )"
