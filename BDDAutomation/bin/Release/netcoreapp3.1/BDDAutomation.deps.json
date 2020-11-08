@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "BDDAutomation/1.0.0": {
         "dependencies": {
+          "BoDi": "1.4.1",
           "Microsoft.NET.Test.Sdk": "16.7.1",
           "NUnit3TestAdapter": "3.17.0",
           "Selenium.Support": "3.141.0",
